@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Main from 'pages/Main';
+import GlobalStyle from 'styles/global';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+<Fragment>
+  <GlobalStyle />
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" exact={true} component={Main} />
+    </Switch>
+  </BrowserRouter>
+</Fragment>
+,
+document.getElementById('root'));
