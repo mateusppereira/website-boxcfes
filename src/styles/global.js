@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import media from 'styles/media';
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -14,13 +15,7 @@ const GlobalStyle = createGlobalStyle`
     color: #2C2E2F;
     font-size: 62.5%;
 
-    @media (max-width: 800px) {
-      font-size: 50%;
-    }
-    
-    @media (max-width: 450px) {      
-      font-size: 40%;
-    }
+    ${media.mobile`font-size: 50%;`}
   }
 `
 

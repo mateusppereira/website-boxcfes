@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyledP, colors } from 'styles/general';
+import { StyledP } from 'styles/general';
 
-const P = ({ color = colors.dark, size = 'default', text }) => {
+const P = ({ color, size = 'default', text }) => {
 
   switch (size) {
     case 'small':

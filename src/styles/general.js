@@ -1,17 +1,5 @@
 import styled from 'styled-components';
 
-export const colors = {
-  dark: '#2C2E2F',
-  darklight: '#4c4f51',
-  white: '#FFF',
-  lighter: '#eee',
-  light: '#F3E8EE',
-  blue: '#007BFF',
-  red: '#FF483C',
-  green: '#52CC6C',
-  yellow: '#FFD014'
-}
-
 export const StyledP = styled.p`
   font-size: ${props => props.font.size};
   color: ${props => props.font.color};
@@ -35,13 +23,12 @@ export const StyledButton = styled.button`
 export const StyledTextInput = styled.input`
   flex-grow: 1;
   font-size: ${props => props.fontsize};
-  color: ${colors.dark};
-  box-shadow: .1rem .1rem .1rem ${colors.lighter};
+  color: ${props => props.theme.colors.dark};
+  box-shadow: .1rem .1rem .1rem ${props => props.theme.colors.lighter};
   margin: 1rem 0;
   padding: 1rem 1.5rem;
   border-radius: .3rem;
-  border: .1rem solid ${colors.lighter};
-  background-color: ${colors.white};
+  border: .1rem solid ${props => props.theme.colors.lighter};
 
   ${props => props.overwrite};
 `

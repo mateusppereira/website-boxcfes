@@ -2,7 +2,7 @@ import React from 'react';
 import { StyledButton } from 'styles/general';
 import Color from 'color';
 
-const Button = ({ bgcolor, size, color = '#000', text }) => {
+const Button = ({ bgcolor, size, color, text }) => {
   const colors = Object.assign({}, { bgcolor, bgcolor2: Color(bgcolor).darken(0.2).hex() });
   
   const font = {

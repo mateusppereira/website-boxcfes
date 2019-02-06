@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import image1 from 'res/02.jpg';
+import image1 from 'res/03.jpg';
+import media from 'styles/media';
 
 export const Container = styled.div`
   min-height: 80vh;
@@ -21,15 +22,13 @@ export const Banner = styled.div`
   /* border: 1px solid red; */
   max-width: 40vw;  
 
-  @media only screen and (max-width: 800px) {
-    max-width: 60vw;  
-  }
+  ${media.mobile`max-width: 60vw`}
 `
 
 export const BannerText = styled.span`
   font-size: 4rem;
   font-weight: 900;
-  color: #EEE;
+  color: ${props => props.theme.colors.lighter};
   text-transform: uppercase;
 `
 
@@ -39,13 +38,13 @@ export const BannerButtons = styled.div`
   /* justify-content: space-between; */
 
   button {
-    font-size: 2rem;
-    color: #ddd;
+    font-size: 2.5rem;
+    color: ${props => props.theme.colors.lighter};
     margin: 10px 20px 10px 0;
-    padding: 20px 15px;
+    padding: 15px 10px;
     border-radius: .3rem;
-    border: .1rem solid #ddd;
-    background-color: #2C2E2F;
+    border: .1rem solid ${props => props.theme.colors.lighter};
+    background-color: ${props => props.theme.colors.dark};
     max-width: 25rem;
     min-width: 20rem;
 
