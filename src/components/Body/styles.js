@@ -3,9 +3,14 @@ import image1 from 'res/03.jpg';
 import media from 'styles/media';
 
 export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+export const LandingSection = styled.div`
   min-height: 80vh;
   max-height: 90vh;
-  /* wi: 80vh; */
+  padding: 1.5rem;
   /* background-image: linear-gradient(to right bottom, #36996Fbf, #ffffffD9), url(${image1}); */
   background-size: cover;
   background-position: center;
@@ -16,13 +21,7 @@ export const Container = styled.div`
   align-items: flex-start;
 `
 
-export const Banner = styled.div`
-  margin: 10px;
-  padding: 20px 20px;
-  /* border: 1px solid red; */
-  max-width: 40vw;  
-
-  ${media.mobile`max-width: 60vw`}
+export const LandingBanner = styled.div`
 `
 
 export const BannerText = styled.span`
@@ -35,21 +34,34 @@ export const BannerText = styled.span`
 export const BannerButtons = styled.div`
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
 
   button {
     font-size: 2.5rem;
-    color: ${props => props.theme.colors.lighter};
-    margin: 10px 20px 10px 0;
-    padding: 15px 10px;
-    border-radius: .3rem;
-    border: .1rem solid ${props => props.theme.colors.lighter};
-    background-color: ${props => props.theme.colors.dark};
+    margin: .3rem;
+    padding: 1rem 1.6rem;
     max-width: 25rem;
     min-width: 20rem;
+    color: ${props => props.theme.colors.lighter};
+    background-color: ${props => props.theme.colors.dark};
+    border-radius: .3rem;
+    border: .1rem solid ${props => props.theme.colors.lighter};
 
     &:hover {
+      color: ${props => props.theme.colors.dark};
+      background-color: ${props => `${props.theme.colors.light}b0`};
       cursor: pointer;
     }
   }
 `
+
+export const TeachersSection = styled.div`
+  min-height: 70vh;
+  padding: 1.5rem;
+  background-color: ${props => props.theme.colors.dark};
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+`
+

@@ -4,15 +4,15 @@ import media from 'styles/media';
 
 export const Container = styled.div`
   height: 6rem;
+  min-height: 50px;
   width: 100vw;
   background-color: ${props => props.theme.colors.darker};
 
-  /* position: fixed; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 6px;
+  padding: 0.5rem .6rem;
 `
 
 export const Img = styled.img`
@@ -21,7 +21,7 @@ export const Img = styled.img`
 `
 
 export const HeaderText = styled.span`
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: ${props => props.theme.colors.lighter};
   font-family: 'Graduate', sans-serif;
   letter-spacing: 0.5rem;
@@ -33,11 +33,9 @@ export const HeaderText = styled.span`
 export const HrefButtons = styled.div`
   animation: ${leftToRight} .3s;
   
-  img { display: none }
   a { display: inline-block }
   
   ${media.mobile`
-    img { display: inline-block }
     a { display: none }
   `}
 `

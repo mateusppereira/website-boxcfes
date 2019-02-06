@@ -6,7 +6,6 @@ const Header = () => (
     <Img alt="logo" src={require('res/logo.png')} />
     <HeaderText>espaço saúde</HeaderText>
     <HrefButtons>
-      <Img alt="logo" src={require('res/logo.png')} />
       <Signin>Entrar</Signin>
       <Signup>Cadastrar-se</Signup>
     </HrefButtons>

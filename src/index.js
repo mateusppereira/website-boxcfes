@@ -7,10 +7,10 @@ import GlobalStyle from 'styles/global';
 
 const theme = {
   colors: {
-    dark: '#333',
+    dark: '#333333',
     darker: '#2C2E2F',
-    light: '#bbb', 
-    lighter: '#ddd', 
+    light: '#bbbbbb', 
+    lighter: '#dddddd', 
     green: '#36996F',
   },
   metrics: {

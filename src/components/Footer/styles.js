@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  background-color: ${props => props.theme.colors.dark};
+  min-height: 30vh;
+  background-color: ${props => props.theme.colors.darker}
+  
 `;

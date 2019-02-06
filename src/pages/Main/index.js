@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container } from './styles';
 import Header from 'components/Header';
 import Body from 'components/Body';
+import Footer from 'components/Footer';
 
 
 class Main extends Component {
@@ -10,14 +11,7 @@ class Main extends Component {
       <Container>
         <Header />
         <Body />
-        {/* <Header>
-          <Img alt="logo" src={Logo} />
-          <H3>Condicionamento Físico Espaço Saúde</H3>
-          <Row>
-            <Signin>Entrar</Signin>
-            <Signup>Cadastrar-se</Signup>
-          </Row>
-        </Header> */}
+        <Footer />
       </Container>
     );
   }
