@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  flex-wrap: wrap-reverse;
   min-height: 15vh;
   background-color: ${props => props.theme.colors.darker};
   border-top: 1px solid ${props => props.theme.colors.light};
