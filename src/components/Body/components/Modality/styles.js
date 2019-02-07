@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import media from 'styles/media';
 
 export const Container = styled.div`
   display: flex;
@@ -8,33 +7,33 @@ export const Container = styled.div`
   max-width: 35rem;
   align-content: flex-start;
 
+  background-color: ${props => props.theme.colors.lighter};
+
+  box-shadow: 1px 1px 18px 0px ${props => props.theme.colors.shadow};
   margin-bottom: 3.5rem;
 `;
 
 export const Img = styled.img`
-  border-radius: 100rem;
-  width: 20rem;
-  height: 20rem;
-  box-shadow: 1px 1px 18px 0px ${props => props.theme.colors.shadow};
-
-  margin-bottom: 2.5rem;
-  margin-right: 2.5rem;
+  width: 100%;
+  align-self: center;
 `;
 
 export const TextSection = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
+  margin: 4rem 2rem;
 `
 
 export const Name = styled.h3`
   font-size: 3.6rem;
-  color: ${props => props.theme.colors.lighter};
+  color: ${props => props.theme.colors.darker};
+  text-transform: uppercase;
 `
 
 export const Description = styled.p`
-  font-size: 2.2rem;
-  color: ${props => props.theme.colors.light};
+  font-size: 2rem;
+  color: ${props => props.theme.colors.dark};
   font-style: italic;
 
 `

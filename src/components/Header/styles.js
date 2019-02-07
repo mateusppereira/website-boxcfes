@@ -5,7 +5,7 @@ import media from 'styles/media';
 export const Container = styled.div`
   height: 6rem;
   min-height: 50px;
-  width: 100vw;
+  /* width: 100vw; */
   background-color: ${props => props.theme.colors.darker};
 
   display: flex;

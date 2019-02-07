@@ -12,6 +12,7 @@ const theme = {
     light: '#bbbbbb', 
     lighter: '#dddddd', 
     green: '#36996F',
+    shadow: '#888888',
   },
   metrics: {
     margin: '5px',

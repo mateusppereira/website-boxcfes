@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import image1 from 'res/03.jpg';
+import mateus from 'res/mateus.jpg';
 import media from 'styles/media';
 
 export const Container = styled.div`
@@ -8,10 +8,10 @@ export const Container = styled.div`
 `
 
 export const LandingSection = styled.div`
-  min-height: 80vh;
-  max-height: 90vh;
+  min-height: 90vh;
+  max-height: 100vh;
   padding: 1.5rem;
-  /* background-image: linear-gradient(to right bottom, #36996Fbf, #ffffffD9), url(${image1}); */
+  /* background-image: linear-gradient(to right bottom, #36996Fbf, #ffffffD9), url(${mateus}); */
   background-size: cover;
   background-position: center;
 
@@ -19,9 +19,6 @@ export const LandingSection = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-`
-
-export const LandingBanner = styled.div`
 `
 
 export const BannerText = styled.span`
@@ -35,7 +32,8 @@ export const BannerButtons = styled.div`
   display: flex;
   flex-direction: row;
 
-  button {
+  a {
+    text-decoration: none;
     font-size: 2.5rem;
     margin: .3rem;
     padding: 1rem 1.6rem;
@@ -54,14 +52,17 @@ export const BannerButtons = styled.div`
   }
 `
 
-export const TeachersSection = styled.div`
-  min-height: 70vh;
-  padding: 1.5rem;
-  background-color: ${props => props.theme.colors.dark};
+export const Section = styled.div`
+  min-height: 90vh;
+  width: 100%;
+  padding: 4.5rem 2rem;
+  background: ${props => props.background};
+  /* background: linear-gradient(to bottom, #333333, #36996F) ${props => props.theme.colors.light}; */
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  ${media.mobile` justify-content: center; `}
   align-items: flex-start;
 `
-

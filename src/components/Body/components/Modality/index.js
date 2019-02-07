@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Description, Img, Name, TextSection } from './styles';
 
-const Teacher = ({ name, img, description }) => (
+const Modality = ({ name, img, description }) => (
   <Container>
-    <Img src={img} alt="teacher" />
+    <Img src={img} alt="Modality" />
     <TextSection>
       <Name>{name}</Name>
       <Description>{description}</Description>
@@ -11,4 +11,4 @@ const Teacher = ({ name, img, description }) => (
   </Container>
 );
 
-export default Teacher;
+export default Modality;
