@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
     color: #2C2E2F;
     font-size: 62.5%;
 
-    ${media.mobile`font-size: 50%;`}
+    ${media.mobile` font-size: 50%; `}
   }
 `
 

@@ -5,9 +5,11 @@ import media from 'styles/media';
 export const Container = styled.div`
   height: 6rem;
   min-height: 50px;
-  /* width: 100vw; */
+  width: 100%;
   background-color: ${props => props.theme.colors.darker};
+  z-index: 9999999;
 
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

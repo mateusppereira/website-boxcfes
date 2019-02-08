@@ -44,6 +44,17 @@ export const H3 = styled.h3`
   margin-bottom: .5rem;
 `
 
+export const FlexColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  ${props => props.assign}
+`
+
+export const FlexRow = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
 export const Div = styled.div`
   padding: ${props => props.padding};
 

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import media from 'styles/media';
 
 export const Container = styled.div`
   display: flex;
@@ -30,11 +29,12 @@ export const TextSection = styled.div`
 export const Name = styled.h3`
   font-size: 3.6rem;
   color: ${props => props.theme.colors.lighter};
+  margin-bottom: 1rem;
 `
 
-export const Description = styled.p`
-  font-size: 2.2rem;
+export const Description = styled.span`
+  font-weight: thin;
+  font-size: 1.8rem;
   color: ${props => props.theme.colors.light};
   font-style: italic;
-
 `
