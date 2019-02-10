@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Lato', sans-serif;
     color: #2C2E2F;
     font-size: 62.5%;
-
+    
     ${media.mobile` font-size: 50%; `}
   }
 `

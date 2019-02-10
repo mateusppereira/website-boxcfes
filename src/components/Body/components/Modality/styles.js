@@ -18,8 +18,9 @@ export const ContainerModality = styled(FlexColumn)`
 `;
 
 export const Img = styled.img`
-  align-self: center;
+  object-fit: cover;
   width: 100%;
+  max-height: 30vh;
 `;
 
 export const TextSection = styled(FlexColumn)`

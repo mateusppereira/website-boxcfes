@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import fernanda from 'res/fernanda.jpg';
+import renatoDu from 'res/renato-du.jpg';
 import media from 'styles/media';
 import { FlexRow, FlexColumn } from 'styles/general';
 
@@ -11,9 +11,9 @@ export const LandingSection = styled(FlexColumn)`
   max-height: 100vh;
   padding: 1.5rem;
 
-  background-image: linear-gradient(to bottom, #36996Fbf, #2C2E2F), url(${fernanda});
+  background-image: linear-gradient(to bottom, #36996F8f, #2C2E2F), url(${renatoDu});
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-attachment: fixed;
 `
 
@@ -62,7 +62,8 @@ export const Section = styled(FlexRow)`
   
   min-height: 90vh;
   width: 100%;
-  padding: 4.5rem 2rem;
+  padding: ${props => props.background ? '4.5rem 2rem' : ''};
   
   background: ${props => props.background};
+  background-position: center;
 `

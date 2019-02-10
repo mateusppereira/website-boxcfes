@@ -1,9 +1,10 @@
 import React from 'react';
 import { withTheme } from 'styled-components';
+import { FlexColumn } from 'styles/general';
 import Modality from './components/Modality';
 import Teacher from './components/Teacher';
-import { BannerButtons, BannerTitle, BannerSubtitle, Container, LandingSection, Section } from './styles';
-import { FlexColumn } from 'styles/general';
+import Brief from './components/Brief';
+import { BannerButtons, BannerSubtitle, BannerTitle, LandingSection, Section } from './styles';
 
 const crossPlans = [
   { name: 'anual', price: 0 },
@@ -43,36 +44,152 @@ const Body = ({ theme }) => (
         <a href="#teachers">Professores</a>
       </BannerButtons>
     </LandingSection>
-    <Section background={`linear-gradient(to bottom, #333333, #36996F) ${theme.colors.light}`} id="methodology">
+    <Section id="methodology" background={`linear-gradient(to bottom, #333333, #36996F) ${theme.colors.light}`}>
       <Modality
         name="Cross trainning"
-        img={require('res/crossfit.jpg')}
+        img={require('res/dudu-t2b.jpg')}
+        description="Movimentos funcionais constantementes vairaidos em alta intensidade"
+        plans={crossPlans}
+      />
+      <Modality
+        name="Cross trainning"
+        img={require('res/claudinha-t2b.jpg')}
         description="Movimentos funcionais constantementes vairaidos em alta intensidade"
         plans={crossPlans}
       />
       <Modality
         name="Treinamento Funcional"
-        img={require('res/crossfit.jpg')}
+        img={require('res/cadu-t2b.jpg')}
         description="ofdsfofosd asknkda dsakjdksad dsakdjaskjdaskjdasjdnas dakjsaskdnasjkd dkjasnkjasda dksjadjkasd dkasjdnak"
         plans={functionalPlans}
       />
       <Modality
         name="HIIT"
-        img={require('res/crossfit.jpg')}
+        img={require('res/rapha-t2b.jpg')}
         description="ofdsfofosd asknkda dsakjdksad dsakdjaskjdaskjdasjdnas dakjsaskdnasjkd dkjasnkjasda dksjadjkasd dkasjdnak"
         plans={hiitPlans}
       />
       <Modality
         name="Pilates"
-        img={require('res/crossfit.jpg')}
+        img={require('res/renato-t2b.jpg')}
         description="ofdsfofosd asknkda dsakjdksad dsakdjaskjdaskjdasjdnas dakjsaskdnasjkd dkjasnkjasda dksjadjkasd dkasjdnak"
         plans={pilatesPlans}
       />
     </Section>
-    <Section background={`linear-gradient(to bottom, #36996F, #2C2E2F) ${theme.colors.light}`} id="teachers">
+    <Section id="athletes">
+      <Brief
+        img={require('res/renato-t2b2.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/rapha-t2b.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/claudinha-t2b.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/mateus.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/fernanda.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/dudu-t2b.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/renato-t2b2.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/rapha-t2b.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/claudinha-t2b.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/mateus.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/fernanda.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/dudu-t2b.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/renato-t2b2.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/rapha-t2b.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/claudinha-t2b.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/mateus.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/fernanda.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+      <Brief
+        img={require('res/dudu-t2b.jpg')}
+        name="Mateus Pereira"
+        age={21}
+        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
+      />
+    </Section>
+    <Section id="teachers" background={`linear-gradient(to bottom, #36996F, #2C2E2F) ${theme.colors.light}`}>
       <Teacher
         name="Raphael Santos"
-        img={require('res/rapha.jpg')}
+        img={require('res/rapha-c2b.jpg')}
         description="Professor e praticante da modalidade CrossTrainning há mais de 3 anos, formado em Educação Física pela UNIVAP e pós graduado em fisiologia do exercício."
       />
       <Teacher
