@@ -1,9 +1,9 @@
 import React from 'react';
 import { withTheme } from 'styled-components';
 import { FlexColumn } from 'styles/general';
+import Briefs from './components/Briefs';
 import Modality from './components/Modality';
 import Teacher from './components/Teacher';
-import Brief from './components/Brief';
 import { BannerButtons, BannerSubtitle, BannerTitle, LandingSection, Section } from './styles';
 
 const crossPlans = [
@@ -48,144 +48,35 @@ const Body = ({ theme }) => (
       <Modality
         name="Cross trainning"
         img={require('res/dudu-t2b.jpg')}
-        description="Movimentos funcionais constantementes vairaidos em alta intensidade"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus."
         plans={crossPlans}
       />
       <Modality
         name="Cross trainning"
         img={require('res/claudinha-t2b.jpg')}
-        description="Movimentos funcionais constantementes vairaidos em alta intensidade"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus."
         plans={crossPlans}
       />
       <Modality
         name="Treinamento Funcional"
         img={require('res/cadu-t2b.jpg')}
-        description="ofdsfofosd asknkda dsakjdksad dsakdjaskjdaskjdasjdnas dakjsaskdnasjkd dkjasnkjasda dksjadjkasd dkasjdnak"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus."
         plans={functionalPlans}
       />
       <Modality
         name="HIIT"
         img={require('res/rapha-t2b.jpg')}
-        description="ofdsfofosd asknkda dsakjdksad dsakdjaskjdaskjdasjdnas dakjsaskdnasjkd dkjasnkjasda dksjadjkasd dkasjdnak"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus."
         plans={hiitPlans}
       />
       <Modality
         name="Pilates"
         img={require('res/renato-t2b.jpg')}
-        description="ofdsfofosd asknkda dsakjdksad dsakdjaskjdaskjdasjdnas dakjsaskdnasjkd dkjasnkjasda dksjadjkasd dkasjdnak"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus."
         plans={pilatesPlans}
       />
     </Section>
-    <Section id="athletes">
-      <Brief
-        img={require('res/renato-t2b2.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/rapha-t2b.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/claudinha-t2b.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/mateus.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/fernanda.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/dudu-t2b.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/renato-t2b2.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/rapha-t2b.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/claudinha-t2b.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/mateus.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/fernanda.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/dudu-t2b.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/renato-t2b2.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/rapha-t2b.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/claudinha-t2b.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/mateus.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/fernanda.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-      <Brief
-        img={require('res/dudu-t2b.jpg')}
-        name="Mateus Pereira"
-        age={21}
-        text="Gosto sadjaskda daskjd askjd askjd askjdaskdkjsadsa. Fdkaskajdsaj fsakjf a dsajdsakd kajda dskajd akadkjdasd. Dsajdsa dskajdka dkasdk dasjdakdask"
-      />
-    </Section>
+    <Briefs />
     <Section id="teachers" background={`linear-gradient(to bottom, #36996F, #2C2E2F) ${theme.colors.light}`}>
       <Teacher
         name="Raphael Santos"

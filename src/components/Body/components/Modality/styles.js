@@ -6,15 +6,15 @@ export const ContainerModality = styled(FlexColumn)`
   flex-wrap:wrap;
   align-content: flex-start;
 
-  max-width: 35rem;
-  min-height: 75vh;
+  max-width: 40rem;
+  min-height: 60vh;
   ${media.mobile` min-height: 50vh; `};
   max-height: 85vh;
   margin: 0 1rem 3.5rem 1rem;
   ${media.mobile` margin: 0 1rem 3.5rem 1rem; `}
 
   background-color: ${props => props.theme.colors.lighter};
-  box-shadow: 1px 1px 18px 0px ${props => props.theme.colors.shadow};
+  box-shadow: 1px 1px 15px 0px ${props => props.theme.colors.shadow};
 `;
 
 export const Img = styled.img`
@@ -24,8 +24,6 @@ export const Img = styled.img`
 `;
 
 export const TextSection = styled(FlexColumn)`
-  flex: 1;
-  
   margin: 2.5rem 1.5rem .5rem 1.5rem;
 `
 
@@ -70,8 +68,8 @@ export const FooterSection = styled(FlexRow)`
 export const ContainerPrice = styled(FlexColumn)`
   justify-content: space-evenly;
 
-  max-width: 35rem;
-  min-height: 75vh;
+  max-width: 40rem;
+  min-height: 60vh;
   ${media.mobile` min-height: 50vh; `};
   max-height: 85vh;
   margin: 0 1rem 3.5rem 1rem;
